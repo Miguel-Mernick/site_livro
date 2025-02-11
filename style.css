@@ -1,0 +1,244 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f6e5;
+    color: #2e8b57;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #f1fdf0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #388e3c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Resumo */
+.resumo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.resumo-container img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+
+}
+
+.texto {
+    margin-right: 2px;
+    width: 65%;
+}
+
+
+.imagem {
+    height: 322px;
+    max-width: 230px;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Personagens */
+.personagens-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.personagem {
+    width: 23%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Necessário para o efeito hover */
+}
+
+.personagem img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.personagem p {
+    margin-top: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+/* Efeito hover para os personagens */
+.personagem:hover p {
+    opacity: 1; /* Texto aparece quando passa o mouse */
+}
+
+.personagem:hover img {
+    opacity: 0.7; /* A imagem fica ligeiramente opaca quando passa o mouse */
+}
+
+/* Autor */
+.autor-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.autor-container .texto {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.autor-container .imagem {
+    height: 322px;
+    max-width: 230px;
+}
+
+.autor-container img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin-left: 70px;
+}
+
+/* Releituras */
+.releitura-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.releitura {
+    width: 30%;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Necessário para o efeito hover */
+}
+
+.releitura img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.releitura p {
+    margin-top: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+/* Efeito hover para as releituras */
+.releitura:hover p {
+    opacity: 1; /* Texto aparece quando passa o mouse */
+}
+
+.releitura:hover img {
+    opacity: 0.7; /* A imagem fica ligeiramente opaca quando passa o mouse */
+}
+
+/* Comentários sobre o livro */
+.comentarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comentario {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comentario img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.comentario p {
+    font-size: 16px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #388e3c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
