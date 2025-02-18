@@ -15,11 +15,22 @@ header {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+}
 
 header h1 {
     margin: 0;
     font-size: 36px;
 }
+
+header .logo {
+    max-width: 100px;
+    justify-content: flex-start;
+}
+
 
 nav ul {
     list-style: none;
@@ -100,7 +111,7 @@ h2 {
     width: 23%;
     text-align: center;
     margin-bottom: 20px;
-    position: relative; /* Necessário para o efeito hover */
+    position: relative; 
 }
 
 .personagem img {
@@ -125,13 +136,14 @@ h2 {
     transition: opacity 0.3s ease;
 }
 
-/* Efeito hover para os personagens */
 .personagem:hover p {
-    opacity: 1; /* Texto aparece quando passa o mouse */
+    /* Texto aparece quando passa o mouse */
+    opacity: 1; 
 }
 
 .personagem:hover img {
-    opacity: 0.7; /* A imagem fica ligeiramente opaca quando passa o mouse */
+    /* A imagem fica ligeiramente opaca quando passa o mouse */
+    opacity: 0.7; 
 }
 
 /* Autor */
@@ -171,7 +183,7 @@ h2 {
     height: 350px;
     text-align: center;
     margin-bottom: 20px;
-    position: relative; /* Necessário para o efeito hover */
+    position: relative;
 }
 
 .releitura img {
@@ -196,13 +208,13 @@ h2 {
     transition: opacity 0.3s ease;
 }
 
-/* Efeito hover para as releituras */
 .releitura:hover p {
-    opacity: 1; /* Texto aparece quando passa o mouse */
+    /* Texto aparece quando passa o mouse */
+    opacity: 1; 
 }
 
 .releitura:hover img {
-    opacity: 0.7; /* A imagem fica ligeiramente opaca quando passa o mouse */
+    opacity: 0.7; 
 }
 
 /* Comentários sobre o livro */
