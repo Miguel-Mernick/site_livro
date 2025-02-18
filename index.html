@@ -7,28 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    <!-- Cabeçalho -->
     <header>
-        <div class="head">
-            <img src="img/logo.png" alt="Logo" class="logo">
-            <div class="navegation">
-                <h1>Frankenstein - Mary Shelley</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#resumo">Resumo</a></li>
-                        <li><a href="#personagens">Personagens</a></li>
-                        <li><a href="#autor">Autor</a></li>
-                        <li><a href="#releitura">Releituras</a></li>
-                        <li><a href="#opiniao">Opiniões</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div class="head">
+                <img src="img/logo.png" alt="Logo da obra Frankenstein" class="logo">
+                <div class="navegation">
+                    <h1>Frankenstein - Mary Shelley</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#resumo" aria-label="Leia o resumo do livro">Resumo</a></li>
+                            <li><a href="#personagens" aria-label="Conheça os personagens">Personagens</a></li>
+                            <li><a href="#autor" aria-label="Saiba mais sobre o autor">Autor</a></li>
+                            <li><a href="#releitura" aria-label="Veja as releituras do livro">Releituras</a></li>
+                            <li><a href="#opiniao" aria-label="Veja as opiniões sobre o livro">Opiniões</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
-    
 
-    <!-- Resumo -->
     <section id="resumo">
         <div class="content">
             <h2>Resumo do Livro</h2>
@@ -37,37 +35,38 @@
                     <p><strong>Frankenstein</strong> é uma obra clássica de Mary Shelley, escrita em 1818, que narra a história de Victor Frankenstein, um jovem cientista obcecado em criar vida artificial. Após dar vida a uma criatura monstruosa, Frankenstein se arrepende de sua criação, o que desencadeia uma série de tragédias e destruição para ambos.</p>
                 </div>
                 <div class="imagem">
-                    <img src="img/capa.jpg" alt="Ilustração do Frankenstein">
+                    <img src="img/capa.jpg" alt="Ilustração de Frankenstein">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Personagens -->
     <section id="personagens">
         <h2>Principais Personagens</h2>
         <div class="personagens-container">
-            <div class="personagem">
-                <img src="img/victor.jpg" alt="Victor Frank
-                enstein">
+            <div class="personagem ativo">
+                <img src="img/victor.jpg" alt="Victor Frankenstein" aria-label="Victor Frankenstein">
                 <p>Victor Frankenstein, o criador do monstro, é um jovem cientista obcecado pela ideia de vencer a morte e alcançar o poder de criar vida.</p>
             </div>
             <div class="personagem">
-                <img src="img/monstro.avif" alt="Monstro de Frankenstein">
+                <img src="img/monstro.avif" alt="O Monstro de Frankenstein" aria-label="O Monstro">
                 <p>O Monstro, também conhecido como a criação de Victor, é uma criatura que busca aceitação e compreensão, mas é rejeitado pela sociedade.</p>
             </div>
             <div class="personagem">
-                <img src="img/Henry.webp" alt="Henry Clerval">
+                <img src="img/Henry.webp" alt="Henry Clerval" aria-label="Henry Clerval">
                 <p>Henry Clerval é o amigo leal de Victor, sempre disposto a apoiar seu amigo. Ele simboliza a pureza e a amizade verdadeira.</p>
             </div>
             <div class="personagem">
-                <img src="img/Elizabeth.jpg" alt="Elizabeth Lavenza">
+                <img src="img/Elizabeth.jpg" alt="Elizabeth Lavenza" aria-label="Elizabeth Lavenza">
                 <p>Elizabeth Lavenza, esposa de Victor, representa a pureza e o amor humano. Sua presença é um lembrete da vida que Victor poderia ter levado se tivesse feito escolhas diferentes.</p>
             </div>
         </div>
+        <div class="seta">
+            <button id="antes" aria-label="Personagem anterior"><</button>
+            <button id="depois" aria-label="Próximo personagem">></button>
+        </div>
     </section>
 
-    <!-- Autor -->
     <section id="autor">
         <h2>Sobre Mary Shelley</h2>
         <div class="autor-container">
@@ -75,17 +74,16 @@
                 <p>Mary Shelley foi uma escritora inglesa do século XIX, amplamente reconhecida por seu romance *Frankenstein*, que não só é um marco na literatura gótica, mas também um dos primeiros exemplos de ficção científica, abordando temas como a ética na ciência e os limites da criação humana.</p>
             </div>
             <div class="imagem">
-                <img src="img/autora.jpg" alt="Mary Shelley">
+                <img src="img/autora.jpg" alt="Imagem de Mary Shelley">
             </div>
         </div>
     </section>
 
-    <!-- Releituras -->
     <section id="releitura">
         <h2>Releituras de Frankenstein</h2>
         <div class="releitura-container">
-            <div class="releitura">
-                <img src="img/primeirolivro.jpg" alt="Primeiro livro de Frankenstein">
+            <div class="releitura ativo">
+                <img src="img/primeirolivro.jpg" alt="Primeira edição de Frankenstein">
                 <p>A primeira edição de *Frankenstein* foi publicada em 1818, trazendo à tona uma história inovadora que mistura ficção científica, horror e filosofia.</p>
             </div>
             <div class="releitura">
@@ -97,49 +95,51 @@
                 <p>O mais recente filme de *Frankenstein* (2015) trouxe uma releitura mais moderna da história, explorando novas dimensões da criação e do arrependimento de Victor Frankenstein.</p>
             </div>
         </div>
+        <div class="seta">
+            <button id="antes-releitura"><</button>
+            <button id="depois-releitura">></button>
+        </div>
     </section>
 
-    <!-- Opiniões -->
     <section id="opiniao">
         <h2>Comentários sobre o livro</h2>
         <div class="comentarios">
             <div class="comentario">
-                <img src="img/pessoa3.jpg" alt="Pessoa 1">
+                <img src="img/pessoa3.jpg" alt="Foto de João Silva">
                 <p>“Uma história que mistura emoção, filosofia e ciência. Totalmente atemporal!”</p>
                 <p><strong>João Silva</strong></p>
             </div>
             <div class="comentario">
-                <img src="img/pessoa4.jpg" alt="Pessoa 2">
+                <img src="img/pessoa4.jpg" alt="Foto de Maria Oliveira">
                 <p>“A trama de Frankenstein é profunda e nos faz questionar os limites da ciência.”</p>
                 <p><strong>Maria Oliveira</strong></p>
             </div>
             <div class="comentario">
-                <img src="img/pessoa2.png" alt="Pessoa 3">
+                <img src="img/pessoa2.png" alt="Foto de Pedro Almeida">
                 <p>“É um clássico que todo amante de literatura deve ler. A história é brilhante.”</p>
                 <p><strong>Pedro Almeida</strong></p>
             </div>
             <div class="comentario">
-                <img src="img/pessoa5.png" alt="Pessoa 4">
+                <img src="img/pessoa5.png" alt="Foto de Ana Costa">
                 <p>“Um dos melhores livros que já li! Reflexões sobre a moralidade e a criação humana.”</p>
                 <p><strong>Ana Costa</strong></p>
             </div>
             <div class="comentario">
-                <img src="img/pessoa1.jpg" alt="Pessoa 5">
+                <img src="img/pessoa1.jpg" alt="Foto de Lucas Pereira">
                 <p>“Frankenstein é um retrato poderoso da obsessão humana e suas consequências.”</p>
                 <p><strong>Lucas Pereira</strong></p>
             </div>
             <div class="comentario">
-                <img src="img/pessoa6.jpg" alt="Pessoa 6">
+                <img src="img/pessoa6.jpg" alt="Foto de Fernanda Lima">
                 <p>“O livro me fez refletir sobre as escolhas que fazemos e o impacto delas.”</p>
                 <p><strong>Fernanda Lima</strong></p>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Frankenstein -A Nadja ensinou certinho papai</p>
+        <p>&copy; 2025 Frankenstein - A Nadja ensinou certinho papai</p>
     </footer>
-
 </body>
+    <script src="script.js"></script>
 </html>

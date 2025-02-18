@@ -1,4 +1,3 @@
-/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     color: #2e8b57;
 }
 
-/* Cabeçalho */
 header {
     background-color: #4caf50;
     color: white;
@@ -53,7 +51,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Seções */
 section {
     padding: 40px 20px;
     margin: 20px auto;
@@ -100,7 +97,6 @@ h2 {
     border-radius: 8px;
 }
 
-/* Personagens */
 .personagens-container {
     display: flex;
     justify-content: space-between;
@@ -112,6 +108,11 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     position: relative; 
+    display: none;
+}
+
+.personagem.ativo{
+    display: block;
 }
 
 .personagem img {
@@ -123,7 +124,7 @@ h2 {
 
 .personagem p {
     margin-top: 10px;
-    opacity: 0; /* Inicialmente invisível */
+    opacity: 0;
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -137,16 +138,13 @@ h2 {
 }
 
 .personagem:hover p {
-    /* Texto aparece quando passa o mouse */
     opacity: 1; 
 }
 
 .personagem:hover img {
-    /* A imagem fica ligeiramente opaca quando passa o mouse */
     opacity: 0.7; 
 }
 
-/* Autor */
 .autor-container {
     display: flex;
     justify-content: space-between;
@@ -184,6 +182,11 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
+    display: none;
+}
+
+.releitura.ativo{
+    display: block;
 }
 
 .releitura img {
@@ -195,7 +198,7 @@ h2 {
 
 .releitura p {
     margin-top: 10px;
-    opacity: 0; /* Inicialmente invisível */
+    opacity: 0;
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -209,7 +212,6 @@ h2 {
 }
 
 .releitura:hover p {
-    /* Texto aparece quando passa o mouse */
     opacity: 1; 
 }
 
@@ -217,7 +219,6 @@ h2 {
     opacity: 0.7; 
 }
 
-/* Comentários sobre o livro */
 .comentarios {
     display: flex;
     flex-wrap: wrap;
@@ -241,7 +242,34 @@ h2 {
     font-size: 16px;
 }
 
-/* Rodapé */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #388e3c; 
+    transform: scale(1.1); 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(155, 255, 166, 0.5);
+}
+
+button:active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
 footer {
     background-color: #388e3c;
     color: white;
@@ -253,4 +281,3 @@ footer {
 footer p {
     margin: 0;
 }
-
